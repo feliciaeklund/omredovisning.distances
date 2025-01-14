@@ -17,4 +17,11 @@ const spanFurthest = document.getElementById("furthest");
 
 let foundCity = false;
 let id;
+let furthest = distances[0].distance;
+let closest = distances[0].distance;
+let furthestId;
+let closestId;
+let furthestName;
+let closestName;
+
 let whatCity = prompt("Vilken stad?");
