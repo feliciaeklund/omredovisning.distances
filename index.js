@@ -6,3 +6,4 @@ const city = document.querySelector("#cities");
 const info = document.querySelector("h3");
 const spanClosest = document.getElementById("closest");
 const spanFurthest = document.getElementById("furthest");
+let whatCity = prompt("Vilken stad?");
