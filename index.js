@@ -33,3 +33,15 @@ for (i = 0; i <= 38; i++) {
     div.setAttribute("id", i);
     div.textContent = cities[i].name;
 }
+
+for (i = 0; i <= 38; i++) {
+    if (whatCity == cities[i].name) {
+        document.getElementById(i).classList.add("target");
+        cityName.textContent = cities[i].name + " " + "(" + cities[i].country + ")";
+        foundCity = true;
+        title.textContent = cities[i].name;
+        id = i;
+
+    }
+}
+
