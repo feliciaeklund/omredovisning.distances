@@ -110,3 +110,15 @@ for (let city of cities) {
     divcreate.classList.add("head_row");
 
 }
+for (let i = 0; i < cities.length; i++) {
+    let city = cities[i];
+    let divcreate = document.createElement("div");
+    table.appendChild(divcreate);
+    divcreate.textContent = city.id + "-" + city.name;
+    divcreate.classList.add("cell");
+    divcreate.classList.add("head_column");
+
+    if (i % 2 === 0) {
+        divcreate.classList.add("even_row");
+    }
+
