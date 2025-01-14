@@ -51,3 +51,6 @@ if (foundCity != true) {
     title.textContent = "Not Found";
 }
 
+
+    closest = closest / 10;
+    furthest = furthest / 10;
