@@ -51,6 +51,13 @@ if (foundCity != true) {
     title.textContent = "Not Found";
 }
 
+    spanClosest.textContent = closestName;
+    spanFurthest.textContent = furthestName;
 
     closest = closest / 10;
     furthest = furthest / 10;
+    document.getElementById(closestId).textContent = closestName + " ligger " + closest + " mil bort "
+    document.getElementById(closestId).classList.add("closest");
+    document.getElementById(furthestId).textContent = furthestName + " ligger " + furthest + " mil bort "
+    document.getElementById(furthestId).classList.add("furthest");
+}
