@@ -102,3 +102,11 @@ emptyCol.textContent = " ";
 emptyCol.style.height = "20px";
 divcreateFirstGrid.append(emptyCol);
 
+for (let city of cities) {
+    let divcreate = document.createElement("div");
+    table.appendChild(divcreate);
+    divcreate.textContent = city.id;
+    divcreate.classList.add("cell");
+    divcreate.classList.add("head_row");
+
+}
