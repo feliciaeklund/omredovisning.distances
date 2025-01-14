@@ -45,3 +45,9 @@ for (i = 0; i <= 38; i++) {
     }
 }
 
+if (foundCity != true) {
+    cityName.textContent = whatCity + " finns inte i databasen";
+    info.textContent = "";
+    title.textContent = "Not Found";
+}
+
