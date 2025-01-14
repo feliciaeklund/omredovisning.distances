@@ -51,6 +51,38 @@ if (foundCity != true) {
     title.textContent = "Not Found";
 }
 
+else {
+    for (const sameid of distances) {
+        if (id === sameid.city1 || id === sameid.city2) {
+            if (sameid.distance > furthest) {
+                furthest = sameid.distance;
+                if (id === sameid.city1) {
+                    furthestId = sameid.city2;
+                }
+                else {
+                    furthestId = sameid.city1;
+                }
+
+            }
+            if (sameid.distance < closest) {
+                closest = sameid.distance;
+                if (id === sameid.city1) {
+                    closestId = sameid.city2;
+                }
+                else {
+                    closestId = sameid.city1;
+                }
+            }
+        }
+        for (const findName of cities) {
+            if (closestId == findName.id) {
+                closestName = findName.name;
+            }
+            if (furthestId == findName.id) {
+                furthestName = findName.name;
+            }
+        }
+    }
     spanClosest.textContent = closestName;
     spanFurthest.textContent = furthestName;
 
