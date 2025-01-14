@@ -93,3 +93,12 @@ else {
     document.getElementById(furthestId).textContent = furthestName + " ligger " + furthest + " mil bort "
     document.getElementById(furthestId).classList.add("furthest");
 }
+
+let divcreateFirstGrid = document.createElement("div");
+table.appendChild(divcreateFirstGrid);
+let emptyCol = document.createElement("div");
+emptyCol.classList.add("cell");
+emptyCol.textContent = " ";
+emptyCol.style.height = "20px";
+divcreateFirstGrid.append(emptyCol);
+
