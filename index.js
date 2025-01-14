@@ -25,3 +25,11 @@ let furthestName;
 let closestName;
 
 let whatCity = prompt("Vilken stad?");
+
+for (i = 0; i <= 38; i++) {
+    let div = document.createElement("div");
+    city.append(div);
+    div.setAttribute("class", "cityBox");
+    div.setAttribute("id", i);
+    div.textContent = cities[i].name;
+}
